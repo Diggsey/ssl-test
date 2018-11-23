@@ -2,7 +2,6 @@
 name = "ssl_test"
 version = "0.1.0"
 authors = ["Diggory Blake <diggsey@googlemail.com>"]
-edition = "2018"
 
 [dependencies]
 chrono = "0.4.0"
@@ -13,7 +12,7 @@ uuid = { version = "0.5.1", features = ["v4", "v5", "serde"] }
 failure = "0.1"
 log = "0.4"
 pretty_env_logger = "0.2"
-reqwest = { git = "https://github.com/Diggsey/reqwest.git", branch = "db-proxies", features = ["socks"] }
+reqwest = { git = "https://github.com/Diggsey/reqwest.git", rev = "20adabcf4ce4962da4855b76d66346b962e1c870", features = ["socks"] }
 r2d2 = "0.8.2"
 r2d2-diesel = "1.0.0"
 rouille = "2.1.0"

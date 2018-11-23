@@ -1195,8 +1195,8 @@ dependencies = [
 
 [[package]]
 name = "reqwest"
-version = "0.9.0-pre"
-source = "git+https://github.com/Diggsey/reqwest.git?branch=db-proxies#6ace20fdf9f28afd5919c727182a6d8db49bc7c2"
+version = "0.9.4"
+source = "git+https://github.com/Diggsey/reqwest.git?rev=20adabcf4ce4962da4855b76d66346b962e1c870#20adabcf4ce4962da4855b76d66346b962e1c870"
 dependencies = [
  "base64 0.9.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "bytes 0.4.10 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -1486,7 +1486,7 @@ dependencies = [
  "r2d2 0.8.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "r2d2-diesel 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "rand 0.5.5 (registry+https://github.com/rust-lang/crates.io-index)",
- "reqwest 0.9.0-pre (git+https://github.com/Diggsey/reqwest.git?branch=db-proxies)",
+ "reqwest 0.9.4 (git+https://github.com/Diggsey/reqwest.git?rev=20adabcf4ce4962da4855b76d66346b962e1c870)",
  "rouille 2.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "sentry 0.12.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.80 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -2136,7 +2136,7 @@ dependencies = [
 "checksum regex-syntax 0.5.3 (registry+https://github.com/rust-lang/crates.io-index)" = "b2550876c31dc914696a6c2e01cbce8afba79a93c8ae979d2fe051c0230b3756"
 "checksum regex-syntax 0.6.2 (registry+https://github.com/rust-lang/crates.io-index)" = "747ba3b235651f6e2f67dfa8bcdcd073ddb7c243cb21c442fc12395dfcac212d"
 "checksum remove_dir_all 0.5.0 (registry+https://github.com/rust-lang/crates.io-index)" = "dfc5b3ce5d5ea144bb04ebd093a9e14e9765bcfec866aecda9b6dec43b3d1e24"
-"checksum reqwest 0.9.0-pre (git+https://github.com/Diggsey/reqwest.git?branch=db-proxies)" = "<none>"
+"checksum reqwest 0.9.4 (git+https://github.com/Diggsey/reqwest.git?rev=20adabcf4ce4962da4855b76d66346b962e1c870)" = "<none>"
 "checksum reqwest 0.9.5 (registry+https://github.com/rust-lang/crates.io-index)" = "ab52e462d1e15891441aeefadff68bdea005174328ce3da0a314f2ad313ec837"
 "checksum rouille 2.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = "cc1f8407af80b0630983b2c1f1860dda1960fdec8d3ee75ba8db14937756d3a0"
 "checksum rustc-demangle 0.1.7 (registry+https://github.com/rust-lang/crates.io-index)" = "11fb43a206a04116ffd7cfcf9bcb941f8eb6cc7ff667272246b0a1c74259a3cb"

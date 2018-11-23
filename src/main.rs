@@ -1,11 +1,13 @@
+extern crate reqwest;
+extern crate url;
+
 use std::time::Duration;
 
-use reqwest;
 use url::Url;
 
 fn main() {
     let endpoint = "https://dev_services.optibet.lv/api/passfort/passfort.php";
-    let maybe_proxy_url = Some("socks5h://webhooks:QCFK%23D3Ds%5DHZGN%25ww%5By8Eg97JUwaHH43@35.195.138.186:33080");
+    let maybe_proxy_url = None::<&'static str>; //Some("socks5h://webhooks:QCFK%23D3Ds%5DHZGN%25ww%5By8Eg97JUwaHH43@10.132.0.9:33080");
     // Make sure we have a timeout
     let mut client_builder = reqwest::ClientBuilder::new()
         .timeout(Duration::from_secs(5));
