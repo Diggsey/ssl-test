@@ -1,0 +1,52 @@
+[package]
+name = "ssl_test"
+version = "0.1.0"
+authors = ["Diggory Blake <diggsey@googlemail.com>"]
+edition = "2018"
+
+[dependencies]
+chrono = "0.4.0"
+diesel = { version="1.1.1", features = ["postgres", "chrono", "uuid", "serde_json"] }
+diesel_migrations = "1.1.0"
+dotenv = "0.9.0"
+uuid = { version = "0.5.1", features = ["v4", "v5", "serde"] }
+failure = "0.1"
+log = "0.4"
+pretty_env_logger = "0.2"
+reqwest = { git = "https://github.com/Diggsey/reqwest.git", branch = "db-proxies", features = ["socks"] }
+r2d2 = "0.8.2"
+r2d2-diesel = "1.0.0"
+rouille = "2.1.0"
+cadence = "0.14.0"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+serde_plain = "0.3"
+openssl-sys = "0.9"
+url = "1.7"
+rand = "0.5.5"
+
+[dependencies.sentry]
+version = "0.12.0"
+default-features = false
+features = [
+    "with_client_implementation",
+    "with_backtrace",
+    "with_panic",
+    "with_failure",
+    "with_log",
+    "with_rust_info"
+]
+
+[dev-dependencies]
+mockito = "0.9"
+lazy_static = "1.0.0"
+parking_lot = "0.5.4"
+
+
+[replace]
+"diesel:1.1.1" = { git = "https://github.com/Passfort/diesel", branch = "diggsey-for-update-1.1.1" }
+"r2d2:0.8.2" = { git = "https://github.com/PassFort/r2d2.git", branch = "handle-panics" }
+
+# This is needed to handle cross-compilation of libpq.
+"pq-sys:0.4.4" = { git = "https://github.com/sgrif/pq-sys" }
